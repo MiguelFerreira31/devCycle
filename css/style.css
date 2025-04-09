@@ -1,0 +1,2209 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+/* sizes */
+/* font */
+h1 {
+  font-size: 4.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 1.05em;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+a {
+  font-size: 1.2em;
+  cursor: url("img/pointer.png"), pointer;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+button {
+  cursor: url("img/pointer.png"), pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #0e0f11;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #579af2;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #285598;
+  border-radius: 12px;
+}
+
+hr {
+  width: 80px;
+  height: 4px;
+  border-radius: 12px;
+  border: none;
+}
+
+::-moz-selection {
+  background-color: #579af2;
+  color: ghostwhite;
+}
+
+::selection {
+  background-color: #579af2;
+  color: ghostwhite;
+}
+
+.button {
+  /* From Uiverse.io by alexmaracinaru */
+}
+.button .cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #579af2;
+  width: 55px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+.button .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.button .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.button .cta:hover:before {
+  width: 100%;
+  background: #579af2;
+}
+.button .cta:hover svg {
+  transform: translateX(0);
+}
+.button .cta:active {
+  transform: scale(0.95);
+}
+.button .card-modal {
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  background-image: url(../img/progranac.png);
+  background-size: cover;
+  flex-direction: column;
+  /* Alinha os elementos na vertical */
+  align-items: center;
+  justify-content: center;
+  /* Faz a imagem ocupar toda a largura */
+  /* Garante que a imagem vá até o topo */
+  background-color: #f0f0f0;
+  /* Apenas para referência visual */
+  overflow: hidden;
+  /* Evita qualquer transbordamento */
+  cursor: pointer;
+  transition: background-position 3s ease-in-out;
+  /* From Uiverse.io by vinodjangid07 */
+}
+.button .card-modal img {
+  width: 100%;
+  height: 100%;
+  /* Agora a imagem ocupa toda a altura do card */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Garante que a imagem cubra todo o espaço */
+  border-radius: 20px 20px 0 0;
+  /* Arredondamento apenas no topo */
+}
+.button .card-modal .button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #579af2;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
+}
+.button .card-modal .button .svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+.button .card-modal .button .svgIcon path {
+  fill: white;
+}
+.button .card-modal .button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #0e0f11;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+.button .card-modal .button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+.button .card-modal .button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "VER MAIS";
+  color: white;
+  font-size: 0px;
+}
+.button .card-modal .button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+.button .card-modal a {
+  text-decoration: none;
+}
+.button .card-modal h3 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0px;
+}
+.button .card-progranac:hover {
+  background-position: 0% 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0e0f11;
+}
+html body {
+  font-family: "ROBOTO", sans-serif;
+  background-color: #0e0f11;
+  overflow-x: hidden;
+  z-index: -1;
+}
+html body header nav {
+  width: 60px;
+  height: 100%;
+  background-color: #0e0f11;
+  padding: 40px 0 40px;
+  box-shadow: 3px 0 0 #285598;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  transition: 0.3s;
+  overflow: hidden;
+}
+html body header nav .logoHeader {
+  width: 30px;
+  height: auto;
+  margin: 0px 0px 50px 5px;
+}
+html body header nav .logoHeader svg {
+  width: 100%;
+  height: auto;
+}
+html body header nav:hover {
+  width: 300px;
+}
+html body header nav .btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+html body header nav .btn-expandir i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+html body header nav ul {
+  height: 100%;
+  list-style-type: none;
+}
+html body header nav ul li {
+  transition: 0.1s;
+}
+html body header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 20px 1%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+  margin-left: 15px;
+}
+html body header nav ul li a .icon > i {
+  font-size: 27px;
+}
+html body header nav ul li:hover {
+  background: #285598;
+}
+html body header nav ul li .txt-link {
+  margin-left: 30px;
+}
+@media only screen and (max-width: 480px) {
+  html body header nav .logoHeader img {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body header nav {
+    width: 50px;
+  }
+}
+html body main #home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  background-color: #0e0f11;
+  text-align: center;
+}
+html body main #home .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+html body main #home .background canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  filter: blur(5px);
+}
+html body main #home .home-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #home h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.5rem;
+  color: white;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+html body main #home h1 span {
+  color: #579af2;
+  margin-left: -6%;
+}
+html body main #home h1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #57c6f2;
+  text-shadow: 20px 0 70px #579af2;
+}
+html body main #home h3 {
+  font-size: 2vw;
+  letter-spacing: 0.7em;
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  color: #faebd7;
+  z-index: 4;
+}
+html body main #home h3 .m {
+  color: #faebd7;
+  text-shadow: 0 0 0 #faebd7;
+  animation: loading 1.5s ease-in-out infinite alternate;
+}
+@media only screen and (max-width: 1025px) {
+  html body main #home h1 {
+    font-size: 8vw;
+  }
+  html body main #home h3 {
+    font-size: 2.5vw;
+  }
+}
+@keyframes loading {
+  to {
+    text-shadow: 20px 0 70px #579af2;
+    color: #579af2;
+  }
+}
+html body main #home .loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+html body main #home .loader span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+html body main #home .loader span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+html body main #home .loader span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+html body main #home .loader span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+html body main #home .loader span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+html body main #home .loader span:nth-child(8) {
+  animation-delay: 0.8s;
+}
+html body main #home .loader span:nth-child(9) {
+  animation-delay: 0.9s;
+}
+html body main #home .loader span:nth-child(10) {
+  animation-delay: 1s;
+}
+html body main #home .loader span:nth-child(11) {
+  animation-delay: 1.1s;
+}
+html body main #home .loader span:nth-child(12) {
+  animation-delay: 1.2s;
+}
+html body main #home .loader span:nth-child(13) {
+  animation-delay: 1.3s;
+}
+html body main #home .loader span:nth-child(14) {
+  animation-delay: 1.4s;
+}
+html body main #home .loader span:nth-child(15) {
+  animation-delay: 1.5s;
+}
+html body main #home .loader span:nth-child(16) {
+  animation-delay: 1.6s;
+}
+html body main #home .loader span:nth-child(17) {
+  animation-delay: 1.7s;
+}
+html body main #home .loader span:nth-child(18) {
+  animation-delay: 1.8s;
+}
+html body main #home .loader span:nth-child(19) {
+  animation-delay: 1.9s;
+}
+html body main #home .loader span:nth-child(20) {
+  animation-delay: 2s;
+}
+html body main #home .loader span:nth-child(21) {
+  animation-delay: 2.1s;
+}
+html body main #home .loader span:nth-child(22) {
+  animation-delay: 2.2s;
+}
+@media only screen and (max-width: 480px) {
+  html body main #home .home-inner {
+    margin-right: -7%;
+  }
+  html body main #home .home-inner h1 {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 769px) {
+  html body main #home {
+    height: 50dvh;
+  }
+}
+html body main #carouselCont {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100vw !important;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2% !important;
+}
+html body main #carouselCont .parceiros {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #carouselCont .parceiros h2 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0% 0% 5% 0%;
+}
+html body main #carouselCont .parceiros h2 span {
+  color: #579af2;
+}
+html body main #carouselCont .parceiros .carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+@media only screen and (max-width: 1025px) {
+  html body main #carouselCont .parceiros .carousel img {
+    height: 70%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  html body main #carouselCont .parceiros .carousel img {
+    height: 50%;
+  }
+}
+html body main #carouselCont .parceiros .gradiente {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: radial-gradient(circle, rgba(14, 15, 17, 0) 10%, rgba(14, 15, 17, 0.1) 20%, rgba(14, 15, 17, 0.2) 30%, rgba(14, 15, 17, 0.3) 40%, rgba(14, 15, 17, 0.4) 50%, rgba(14, 15, 17, 0.5) 60%, rgba(14, 15, 17, 0.8) 70%, rgba(14, 15, 17, 0.95) 80%, rgb(14, 15, 17) 90%, rgb(14, 15, 17) 100%);
+  top: 137px;
+  left: 0px;
+  z-index: 99999;
+}
+@media only screen and (max-width: 769px) {
+  html body main #carouselCont .parceiros .gradiente {
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #carouselCont .parceiros .gradiente {
+    height: 120px !important;
+    margin-top: -6%;
+  }
+}
+html body main #carouselCont .tecnologias {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #carouselCont .tecnologias h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 1% 0% 2% 0%;
+}
+html body main #carouselCont .tecnologias .carouselTec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100%;
+  gap: 50px;
+}
+html body main #carouselCont .tecnologias .carouselTec div {
+  width: 320px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 1%;
+  border-radius: 20px;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  padding: 0.5%;
+}
+html body main #carouselCont .tecnologias .carouselTec div h4 {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.05em;
+  margin-bottom: 2%;
+}
+html body main #carouselCont .tecnologias .carouselTec div img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 2%;
+}
+html body main #carouselCont .tecnologias .carouselTec div p {
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  html body main #carouselCont .tecnologias .carouselTec div {
+    width: 290px;
+  }
+}
+html body main .wrapp {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+html body main .wrapp .content {
+  width: 100%;
+  height: auto;
+}
+html body main .wrapp .spacer {
+  width: 100%;
+  background: #ddd;
+}
+html body main #sobre-responsive {
+  display: none;
+}
+html body main .work {
+  display: flex;
+}
+html body main .work__left {
+  position: relative;
+  width: 54%;
+  z-index: 2;
+  margin-left: 5%;
+}
+html body main .work__left .work__text {
+  margin: auto;
+  width: 80%;
+}
+html body main .work__left .work__text .work__info {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html body main .work__left .work__text .work__info .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+}
+html body main .work__left .work__text .work__info .title span {
+  color: #e79740;
+}
+html body main .work__left .work__text .work__info .title p {
+  width: 480px;
+  text-align: center;
+}
+html body main .work__left .work__text .work__info .titleTwo {
+  text-transform: none;
+}
+@media only screen and (max-width: 1025px) {
+  html body main .work__left .work__text .work__info .titleTwo {
+    font-size: 2.8em;
+  }
+}
+html body main .work__left .work__text .work__info .titleCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start !important;
+  gap: 10%;
+}
+html body main .work__left .work__text .work__info .titleCont .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  gap: 10%;
+}
+html body main .work__left .work__text .work__info .titleCont .icons img {
+  width: 50px;
+  height: auto;
+}
+html body main .work__left .work__text .work__info .titleCont .icons.iconOne img {
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: 1px solid #e79740;
+}
+html body main .work__left .work__text .work__info .titleCont .icons.iconTwo img {
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: 1px solid #e30278;
+}
+html body main .work__left .work__text .work__info .titleCont .icons.iconThree img {
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: 1px solid #7e4bd0;
+}
+html body main .work__left .work__text .visao .work__left-bl h3 span {
+  color: #e30278;
+}
+html body main .work__left .work__text .valores .work__left-bl h3 span {
+  color: #7e4bd0;
+}
+html body main .work__right {
+  width: 46%;
+  height: auto;
+}
+html body main .work__right-bl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 999999;
+}
+html body main .work__right .work__photo {
+  width: 50vw;
+  height: 100vw;
+  position: relative;
+}
+html body main .work__right .work__photo .work__photo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+}
+@media only screen and (max-width: 769px) {
+  html body main #sobre-responsive {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  html body main #sobre-responsive h2 {
+    text-align: center;
+    margin-right: -6%;
+    font-size: 2.8em;
+    width: 100%;
+  }
+  html body main #sobre-responsive h2 span {
+    color: #579af2;
+  }
+  html body main #sobre-responsive .sobre-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  html body main #sobre-responsive .sobre-container .sobreTitle {
+    margin: 2%;
+  }
+  html body main .wrapp {
+    display: none;
+  }
+}
+html body main .sobreTitle {
+  width: 420px;
+  height: 450px;
+  background: #0e0f11;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5%;
+  padding: 7% 5% 5% 5%;
+}
+html body main .sobreTitle h4 {
+  margin-bottom: 5%;
+}
+html body main .sobreTitle h4 span {
+  color: #e79740;
+}
+html body main .sobreTitle p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 350px;
+}
+html body main .titleVisao span {
+  color: #e30278 !important;
+}
+html body main .titleValores span {
+  color: #7e4bd0 !important;
+}
+@media only screen and (max-width: 480px) {
+  html body main .sobre-container h2 {
+    font-size: 1.9em !important;
+  }
+  html body main .sobreTitle {
+    width: 80%;
+    margin-right: -12% !important;
+    justify-content: space-evenly;
+  }
+  html body main .sobreTitle p {
+    font-size: 1em;
+    width: 80%;
+  }
+}
+html body main #nossoParceiro {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70dvh;
+}
+html body main #nossoParceiro .parceiro-container {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+html body main #nossoParceiro .parceiro-container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30%;
+  width: 100%;
+  justify-content: space-evenly;
+}
+html body main #nossoParceiro .parceiro-container .title span {
+  color: #579af2;
+}
+html body main #nossoParceiro .parceiro-container .title p {
+  width: 480px;
+  text-align: center;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card {
+  width: 100%;
+  height: 60%;
+  background-image: url(" ../img/background_seja_nosso_parceiro.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 10%;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -6%;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone img {
+  margin-bottom: 6%;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone h4 {
+  margin-bottom: 3%;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone p {
+  width: 290px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card :first-child {
+  margin-left: 2%;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone:nth-child(1) {
+  margin-left: -1%;
+  margin-top: -8%;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone:nth-child(2) {
+  margin-left: -12%;
+  margin-top: -10%;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone:nth-child(3) {
+  margin-left: -15%;
+  margin-top: -8%;
+}
+@media only screen and (max-width: 769px) {
+  html body main #nossoParceiro .parceiro-container .parceiro-card .icone {
+    margin-right: -20% !important;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  html body main #nossoParceiro .parceiro-container .icone:nth-child(2) {
+    margin-left: -4%;
+    margin-top: -12%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  html body main #nossoParceiro .parceiro-container .parceiro-card {
+    height: 80%;
+    margin-top: 5%;
+    background-image: none;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+  }
+  html body main #nossoParceiro .parceiro-container .parceiro-card .icone {
+    width: 100%;
+    height: 30%;
+    margin: 0 !important;
+  }
+  html body main #nossoParceiro .parceiro-container .parceiro-card .icone :first-child {
+    margin: 0%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #nossoParceiro .parceiro-container .title h2 {
+    font-size: 1.5em !important;
+  }
+  html body main #nossoParceiro .parceiro-container .title p {
+    width: 70%;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #nossoParceiro {
+    height: 100dvh;
+  }
+}
+html body main #servicos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+html body main #servicos .servicosContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+html body main #servicos .servicosContainer .servicoOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50%;
+  min-width: 100%;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+  flex-direction: column;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont h4 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont h4 span {
+  color: #579af2;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont h3 {
+  width: 560px;
+  font-size: 2.7em;
+  margin-bottom: 2%;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont p {
+  color: rgba(255, 255, 255, 0.6);
+  width: 550px;
+  font-size: 1em;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont .titleItens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont .titleItens h4 {
+  margin: 0px !important;
+  width: 400px;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont .titleItens img {
+  width: 30px;
+  height: auto;
+  margin-right: 5%;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont .mobile img {
+  width: auto;
+  height: 30px;
+  margin: 0% 6% 0% 1.5%;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoCont hr {
+  width: 90%;
+  height: 0.5px;
+  background: white;
+  opacity: 0.15;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens {
+  display: flex;
+  position: static;
+  height: 700px;
+  width: 640px;
+  background-size: 640px;
+  background-repeat: no-repeat;
+  background-image: url("../img/background_servicos.png");
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles h4 {
+  font-weight: bold;
+  font-size: 1, 2em;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2%;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles img {
+  width: 20px;
+  height: auto;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .manutencao {
+  left: 100px;
+  top: -65px;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .seo {
+  left: 160px;
+  top: 40px;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .icons {
+  position: relative;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .icons img {
+  width: 60px;
+  height: auto;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .manutencaoIcon {
+  left: 111px;
+  top: 173px;
+}
+html body main #servicos .servicosContainer .servicoOne .servicoItens .marketingIcon {
+  left: -83px;
+  top: 463px;
+}
+@media only screen and (max-width: 1025px) {
+  html body main #servicos .servicosContainer .servicoOne .servicoCont {
+    width: 50%;
+    height: 100%;
+  }
+  html body main #servicos .servicosContainer .servicoOne .servicoItens {
+    width: 60%;
+  }
+}
+html body main #servicos .servicosContainer .servicoTwo {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10%;
+  height: auto;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  margin-bottom: 3%;
+  padding: 3% 7% 3% 7%;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon {
+  background: #579af2;
+  padding: 3.5%;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon img {
+  width: 60px;
+  height: auto;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens h4 {
+  font-weight: bold;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens p {
+  width: 400px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+@media only screen and (max-width: 1025px) {
+  html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens {
+    padding: 2% 4%;
+    width: 80%;
+  }
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  margin-bottom: 0%;
+  padding: 3% 7% 3% 7%;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon {
+  background: #579af2;
+  padding: 3.5%;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon img {
+  width: 60px;
+  height: auto;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo h4 {
+  font-weight: bold;
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo p {
+  width: 400px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+@media only screen and (max-width: 1025px) {
+  html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo {
+    padding: 2% 6%;
+    width: 70%;
+  }
+}
+html body main #servicos .servicosContainer .conection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+html body main #servicos .servicosContainer .conection hr {
+  background-color: #579af2 !important;
+  opacity: 1 !important;
+  margin: 0% !important;
+  border-radius: 0px !important;
+}
+html body main #servicos .servicosContainer .conection .horiOne {
+  display: flex;
+  width: 94px;
+  position: relative;
+  top: -460px;
+  left: 197px;
+}
+html body main #servicos .servicosContainer .conection .horiTwo {
+  display: flex;
+  width: 94px;
+  position: relative;
+  top: -270px;
+  left: 103px;
+}
+html body main #servicos .servicosContainer .conection .vertOne {
+  display: flex;
+  width: 300px;
+  position: relative;
+  top: -312px;
+  left: -94px;
+  transform: rotate(90deg);
+}
+html body main #servicos-responsive {
+  display: none;
+}
+@media only screen and (max-width: 769px) {
+  html body main #servicos {
+    display: none;
+  }
+  html body main #servicos-responsive {
+    width: 100%;
+    height: 140dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  html body main #servicos-responsive .servicos-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: end;
+    align-items: flex-start !important;
+    flex-direction: column;
+    margin-block: 10%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont h4 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont h4 span {
+    color: #579af2;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont h3 {
+    width: 560px;
+    font-size: 2.7em;
+    margin-bottom: 2%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont p {
+    color: rgba(255, 255, 255, 0.6);
+    width: 550px;
+    font-size: 1em;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .titleItens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start !important;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .titleItens h4 {
+    margin: 0px !important;
+    width: 400px;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .titleItens img {
+    width: 30px;
+    height: auto;
+    margin-right: 5%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .mobile img {
+    width: auto;
+    height: 30px;
+    margin: 0% 6% 0% 1.5%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont hr {
+    width: 90%;
+    height: 0.5px;
+    background: white;
+    opacity: 0.15;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens {
+    display: flex;
+    position: static;
+    height: 700px;
+    width: 640px;
+    background-size: 640px;
+    background-repeat: no-repeat;
+    background-image: url("../img/background_servicos.png");
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .servicoTitles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .servicoTitles h4 {
+    font-weight: bold;
+    font-size: 1, 2em;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .servicoTitles p {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .servicoTitles img {
+    width: 20px;
+    height: auto;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .manutencao {
+    left: 100px;
+    top: -65px;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .seo {
+    left: 160px;
+    top: 40px;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .icons {
+    position: relative;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .icons img {
+    width: 60px;
+    height: auto;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .manutencaoIcon {
+    left: 111px;
+    top: 173px;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .marketingIcon {
+    left: -83px;
+    top: 463px;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards {
+    width: 80%;
+    height: 50%;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    margin-bottom: 3%;
+    padding: 3% 7% 3% 7%;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens .imgIcon {
+    background: #579af2;
+    padding: 3.5%;
+    border-radius: 50%;
+    margin-right: 5%;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens .imgIcon img {
+    width: 60px;
+    height: auto;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens h4 {
+    font-weight: bold;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens p {
+    width: 400px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main .servicoCont {
+    width: 80% !important;
+  }
+  html body main .servicoCont h4 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  html body main .servicoCont h4 span {
+    color: #579af2;
+  }
+  html body main .servicoCont h3 {
+    width: 280px !important;
+    font-size: 1em !important;
+  }
+  html body main .servicoCont p {
+    color: rgba(255, 255, 255, 0.6);
+    width: 280px !important;
+    font-size: 0.7em !important;
+  }
+  html body main .servicoCont .titleItens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start !important;
+  }
+  html body main .servicoCont .titleItens h4 {
+    width: 200px;
+    font-size: 1.1em;
+    margin-bottom: -2%;
+  }
+  html body main .servico-cards {
+    width: 90%;
+    height: 50%;
+  }
+  html body main .servico-cards .servicoTwoItens {
+    width: 120% !important;
+    height: 40% !important;
+  }
+  html body main .servico-cards .servicoTwoItens .imgIcon {
+    background: #579af2;
+    padding: 3.5%;
+    border-radius: 50%;
+    margin-right: 5%;
+  }
+  html body main .servico-cards .servicoTwoItens .imgIcon img {
+    width: 40px !important;
+    height: auto;
+  }
+  html body main .servico-cards .servicoTwoItens h4 {
+    font-weight: bold;
+  }
+  html body main .servico-cards .servicoTwoItens p {
+    width: 200px !important;
+    font-size: 0.7em;
+  }
+}
+html body main #portifolio {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0% 0% 3% 0%;
+}
+html body main #portifolio .site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #portifolio .port-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+}
+html body main #portifolio .port-card h2 {
+  color: white;
+  font-size: 6em;
+  text-align: center;
+  font-weight: bold;
+}
+html body main #portifolio .port-card h2 span {
+  color: #579af2;
+}
+html body main #portifolio .port-card h4 {
+  color: white;
+  margin-top: 1%;
+  text-align: center;
+  width: 650px;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+html body main #portifolio .card-port {
+  display: flex;
+  margin-top: 1.5%;
+  width: 80%;
+  height: 60%;
+  border-radius: 10%;
+  z-index: 2222;
+  justify-content: center;
+  gap: 3.5%;
+}
+html body main #portifolio .card-port .card-progranac {
+  width: 30%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  background-image: url(../img/progranac.png);
+  background-size: cover;
+  flex-direction: column;
+  /* Alinha os elementos na vertical */
+  align-items: center;
+  justify-content: center;
+  /* Faz a imagem ocupar toda a largura */
+  /* Garante que a imagem vá até o topo */
+  background-color: #f0f0f0;
+  /* Apenas para referência visual */
+  overflow: hidden;
+  /* Evita qualquer transbordamento */
+  cursor: pointer;
+  transition: background-position 3s ease-in-out;
+  /* From Uiverse.io by vinodjangid07 */
+}
+html body main #portifolio .card-port .card-progranac img {
+  width: 100%;
+  height: 100%;
+  /* Agora a imagem ocupa toda a altura do card */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Garante que a imagem cubra todo o espaço */
+  border-radius: 20px 20px 0 0;
+  /* Arredondamento apenas no topo */
+}
+html body main #portifolio .card-port .card-progranac .button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #579af2;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
+}
+html body main #portifolio .card-port .card-progranac .button .svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+html body main #portifolio .card-port .card-progranac .button .svgIcon path {
+  fill: white;
+}
+html body main #portifolio .card-port .card-progranac .button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #0e0f11;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+html body main #portifolio .card-port .card-progranac .button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+html body main #portifolio .card-port .card-progranac .button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "VER MAIS";
+  color: white;
+  font-size: 0px;
+}
+html body main #portifolio .card-port .card-progranac .button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+html body main #portifolio .card-port .card-progranac a {
+  text-decoration: none;
+}
+html body main #portifolio .card-port .card-progranac h3 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0px;
+}
+html body main #portifolio .card-senacria {
+  width: 30%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  background-image: url(../img/senacria.png);
+  background-size: cover;
+  flex-direction: column;
+  /* Alinha os elementos na vertical */
+  align-items: center;
+  justify-content: center;
+  /* Faz a imagem ocupar toda a largura */
+  /* Garante que a imagem vá até o topo */
+  background-color: #f0f0f0;
+  /* Apenas para referência visual */
+  overflow: hidden;
+  /* Evita qualquer transbordamento */
+  cursor: pointer;
+  transition: background-position 3s ease-in-out;
+}
+html body main #portifolio .card-senacria img {
+  width: 100%;
+  height: 100%;
+  /* Agora a imagem ocupa toda a altura do card */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Garante que a imagem cubra todo o espaço */
+  border-radius: 20px 20px 0 0;
+  /* Arredondamento apenas no topo */
+}
+html body main #portifolio .card-senacria .button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #579af2;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
+}
+html body main #portifolio .card-senacria .button .svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+html body main #portifolio .card-senacria .button .svgIcon path {
+  fill: white;
+}
+html body main #portifolio .card-senacria .button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #0e0f11;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+html body main #portifolio .card-senacria .button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+html body main #portifolio .card-senacria .button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "VER MAIS";
+  color: white;
+  font-size: 0px;
+}
+html body main #portifolio .card-senacria .button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+html body main #portifolio .card-senacria a {
+  text-decoration: none;
+}
+html body main #portifolio .card-senacria h3 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0px;
+}
+@media only screen and (max-width: 769px) {
+  html body main #portifolio .port-card h2 {
+    font-size: 4em;
+  }
+  html body main #portifolio .port-card h4 {
+    font-size: 1em;
+    width: 80%;
+  }
+  html body main #portifolio .card-port {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+  }
+  html body main #portifolio .card-port .card-progranac,
+  html body main #portifolio .card-port .card-senacria,
+  html body main #portifolio .card-port .card-solarprog {
+    width: 60%;
+    height: 40%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #portifolio .port-card h2 {
+    font-size: 2em;
+  }
+  html body main #portifolio .port-card h4 {
+    display: none;
+  }
+  html body main #portifolio .card-port .card-progranac,
+  html body main #portifolio .card-port .card-senacria,
+  html body main #portifolio .card-port .card-solarprog {
+    width: 90%;
+    height: 40%;
+    margin-right: -20%;
+  }
+}
+html body main #portifolio .card-solarprog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 600px;
+  border-radius: 20px;
+  background-image: url("../img/senacria.png");
+  background-size: cover;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-position 3s ease-in-out;
+}
+html body main #portifolio .card-solarprog img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+html body main #portifolio .card-solarprog .button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #579af2;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
+}
+html body main #portifolio .card-solarprog .button .svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+html body main #portifolio .card-solarprog .button .svgIcon path {
+  fill: white;
+}
+html body main #portifolio .card-solarprog .button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #0e0f11;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+html body main #portifolio .card-solarprog .button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+html body main #portifolio .card-solarprog .button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "VER MAIS";
+  color: white;
+  font-size: 0px;
+}
+html body main #portifolio .card-solarprog .button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+html body main #portifolio .card-solarprog a {
+  text-decoration: none;
+}
+html body main #portifolio .card-solarprog h3 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0px;
+}
+html body main #portifolio .card-progranac:hover {
+  background-position: 0% 100%;
+}
+html body main #portifolio .card-senacria:hover {
+  background-position: 0% 100%;
+}
+html body main #portifolio .card-solarprog:hover {
+  background-position: 0% 100%;
+}
+@media only screen and (max-width: 769px) {
+  html body main #portifolio {
+    height: 160dvh;
+  }
+}
+html body main #solucoes {
+  width: 100%;
+  height: 40dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+html body main #solucoes .solucoesCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+  background: rgba(46, 46, 46, 0.6);
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.7);
+  padding: 4%;
+  border-radius: 25px;
+}
+html body main #solucoes .solucoesCont div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+  flex-direction: column;
+}
+html body main #solucoes .solucoesCont div h2 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+html body main #solucoes .solucoesCont div p {
+  color: rgba(255, 255, 255, 0.6);
+  width: 700px;
+}
+html body main #solucoes .solucoesCont div {
+  margin-left: 6%;
+  /* From Uiverse.io by alexmaracinaru */
+}
+html body main #solucoes .solucoesCont div .cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+html body main #solucoes .solucoesCont div .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #579af2;
+  width: 55px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+html body main #solucoes .solucoesCont div .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+html body main #solucoes .solucoesCont div .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+html body main #solucoes .solucoesCont div .cta:hover:before {
+  width: 100%;
+  background: #579af2;
+}
+html body main #solucoes .solucoesCont div .cta:hover svg {
+  transform: translateX(0);
+}
+html body main #solucoes .solucoesCont div .cta:active {
+  transform: scale(0.95);
+}
+@media only screen and (max-width: 1025px) {
+  html body main #solucoes .solucoesCont {
+    flex-direction: column;
+    width: 90%;
+    margin-right: -5%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  html body main #solucoes .solucoesCont {
+    flex-direction: column;
+    width: 90%;
+    margin-right: -9%;
+  }
+  html body main #solucoes .solucoesCont div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  html body main #solucoes .solucoesCont div h3 {
+    font-size: 2em;
+  }
+  html body main #solucoes .solucoesCont div p {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #solucoes .solucoesCont {
+    flex-direction: column;
+    width: 80%;
+    margin-right: -13%;
+  }
+  html body main #solucoes .solucoesCont div h3 {
+    font-size: 1.8em;
+  }
+  html body main #solucoes .solucoesCont div p {
+    width: 100%;
+  }
+}
+html body main #contato {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #contato h2 {
+  font-size: 6em;
+  text-align: center;
+}
+html body main #contato h2 span {
+  color: #579af2;
+}
+html body main #contato h3 {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+html body main #contato p {
+  color: #579af2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main #contato .pergunta {
+  width: 50%;
+  background: transparent;
+  margin-top: 1%;
+  /* Deixa o fundo do acordeão transparente */
+  /* Muda a cor do texto ao passar o mouse */
+  /* Linha azul separando cada pergunta */
+  /* Estiliza o corpo do acordeão */
+  /* Remove a borda padrão do botão */
+  /* Deixa a seta branca */
+}
+html body main #contato .pergunta .accordion-button {
+  background-color: transparent !important;
+  border: none;
+  color: #fff;
+  /* Mantém o texto visível */
+  font-size: 0.2em;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+html body main #contato .pergunta .accordion-collapse {
+  transition: height 0.5s;
+}
+html body main #contato .pergunta .accordion-button:hover {
+  color: #579af2;
+}
+html body main #contato .pergunta .accordion-item {
+  border: none;
+  background-color: transparent;
+  margin-block: 2%;
+  border-radius: 12px;
+  background-color: rgba(107, 107, 107, 0.123) !important;
+  border: none !important;
+}
+html body main #contato .pergunta .accordion-item:hover {
+  border: none !important;
+}
+html body main #contato .pergunta .accordion-item:active {
+  border: none !important;
+}
+html body main #contato .pergunta .accordion-body {
+  border: none !important;
+  /* Fundo semi-transparente */
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+html body main #contato .pergunta .accordion-button:focus {
+  box-shadow: none;
+}
+html body main #contato .pergunta .accordion-button::after {
+  background-image: url(../img/plus_icon.png);
+  /* Inverte a cor padrão da seta (de preto para branco) */
+}
+html body main #contato .buttonCont {
+  /* From Uiverse.io by alexmaracinaru */
+}
+html body main #contato .buttonCont .buttonContato {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main #contato .buttonCont .buttonContato:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #579af2;
+  width: 55px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+html body main #contato .buttonCont .buttonContato span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+html body main #contato .buttonCont .buttonContato svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+html body main #contato .buttonCont .buttonContato:hover:before {
+  width: 100%;
+  background: #579af2;
+}
+html body main #contato .buttonCont .buttonContato:hover svg {
+  transform: translateX(0);
+}
+html body main #contato .buttonCont .buttonContato:active {
+  transform: scale(0.95);
+}
+@media only screen and (max-width: 769px) {
+  html body main #contato h2 {
+    font-size: 3em;
+  }
+  html body main #contato .pergunta {
+    width: 80%;
+    margin-right: -8% !important;
+  }
+  html body main #contato .accordion-button {
+    font-size: 0.4em !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #contato h2 {
+    font-size: 2em;
+    margin-right: -8%;
+    width: 70%;
+  }
+  html body main #contato h3 {
+    font-size: 1.5em;
+    margin-right: -8%;
+  }
+  html body main #contato .pergunta {
+    width: 70%;
+    margin-right: -8% !important;
+  }
+  html body main #contato .accordion-button {
+    font-size: 0.4em !important;
+  }
+}
+html body footer {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+html body footer .footer-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+html body footer .footer-container .footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html body footer .footer-container .footer-logo h3 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+html body footer .footer-container .footer-logo img {
+  width: 250px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+html body footer .footer-container .footer-links {
+  display: flex;
+  gap: 50px;
+}
+html body footer .footer-container .footer-links .footer-section {
+  display: flex;
+  flex-direction: column;
+}
+html body footer .footer-container .footer-links .footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+html body footer .footer-container .footer-links .footer-section a {
+  color: #bbbbbb;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+html body footer .footer-container .footer-links .footer-section a:hover {
+  color: #579af2;
+}
+html body footer .footer-container .footer-pai {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  /* From Uiverse.io by elisapi */
+  /* for all social containers*/
+  /* instagram*/
+  /* twitter*/
+  /* linkdin*/
+  /* Whatsapp*/
+}
+html body footer .footer-container .footer-pai .card {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: transparent;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+}
+html body footer .footer-container .footer-pai .socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(105, 105, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  border-radius: 30px;
+}
+html body footer .footer-container .footer-pai .containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+html body footer .footer-container .footer-pai .containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+html body footer .footer-container .footer-pai .containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+html body footer .footer-container .footer-pai .containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+html body footer .footer-container .footer-pai .socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+html body footer .footer-container .footer-pai .socialSvg {
+  width: 17px;
+}
+html body footer .footer-container .footer-pai .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+html body footer .footer-container .footer-pai .socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+html body footer .footer-final {
+  width: 90%;
+  border-top: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+html body footer .paragrafo {
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  margin: 0.5% !important;
+}
+@media only screen and (max-width: 768px) {
+  html body footer .footer-container {
+    width: 70%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=style.css.map */
