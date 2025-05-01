@@ -14,6 +14,19 @@
 
 Divulgar os serviços da **DevCycle**, uma agência especializada em soluções web modernas, com foco em design, performance e experiência do usuário.
 
-## 📁 Estrutura do Projeto
+
+## 🧩 Funcionalidades
+
+- Apresentação da agência e serviços
+- Animações com scroll e entrada de elementos
+- Design responsivo com Bootstrap
+- Estrutura otimizada para SEO on-page
+- Código limpo e reutilizável
+
+## 💻 Como Rodar Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/MiguelFerreira3/devcycle.git
 
 
